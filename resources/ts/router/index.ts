@@ -10,6 +10,11 @@ export const routes = [
         name: 'Home',
         component: () => import('@/views/home/HomeView.vue'),
       },
+      {
+        path: '/404',
+        name: 'NotFound',
+        component: () => import('@/views/errors/NotFoundView.vue'),
+      },      
     ],
   },
   { path: '/:pathMatch(.*)*', redirect: '/404' },
